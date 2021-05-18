@@ -62,7 +62,7 @@ public class AllConstruct {
         for (int i=0; i<= targetWord.length(); i++) {
             allWays.add(new ArrayList<>());
         }
-        allWays.get(0).add(new ArrayList<>());
+        allWays.get(0).add(new ArrayList<>()); // base case
         for(int i=0; i<= targetWord.length(); i++) {
             String current = targetWord.substring(i);
             if(allWays.get(i) != null) {
